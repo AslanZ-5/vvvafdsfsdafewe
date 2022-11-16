@@ -2,13 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+        <div class="header__block">
+            <div class="header__menu icon">
+            </div>
+    <div class="header__logo logo">
+        <img class="logo__img" src="img/logo.svg" alt="logo img">
+    </div>
+</div>
+        
+        <div  class="header__i-group-1">
+                <div class="header__icon1 icon"></div>
+                <div class="header__icon2 icon"></div>
+                <div class="header__icon3 icon"></div>
+    
+        </div>
+        <div class="header__i-group-2">
+                    <div class="header__icon4 repair-icon icon"></div>
+                    <div class="header__icon5 check-icon icon"></div>
+        </div>
+    </header>
+    <div class="container">
+    <section class="services">
+        <div class="services__header">
+            <h1 class="services__title ">Услуги и сервисы</h1>
+            <div class="services__icons">
+                    <div class="services__icon1 repair-icon icon"></div>
+                    <div class="services__icon2 check-icon icon"></div>
+            </div>
+        </div>
+
+        <div class="services__wrapper">
+            <ul class="services__items">
+                <li class="services__item item1 services__item-active  ">Ремонтируемые устройства</li>
+                <li class="services__item item2 ">Дополнительные услуги</li>
+                <li  class="services__item item3 ">Ремонтируемые бренды</li>
+                <li class="services__item item4 ">Цены на услуги</li>
+                <li  class="services__item item5">Адреса сервисных центров</li>
+                <li class="services__item item6">Специальные цены</li>
+            </ul>
+        </div>
+        <div  class="feedback">
+            <a href="#" class="feedback__link">Отзывы</a>
+        </div>
+    </section>
+        <section class="about">
+            <div class="about__wrapper">
+                <div class="about__text">
+                    <div class="about__paragraph">
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+                        </p>
+                        <p class="about__p1" >
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                            </p>
+                            <p class="about__p2"><br>
+Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                            </p>
+                        </div>
+                    
+
+                    
+                    
+                    <div class="read-more">
+                        <img src="img/expand.svg" alt="arrow down for read more button" class="read-more__icon">
+                        <a href="#" class="read-more__link">Читать далее</a>
+                    </div>
+                </div>
+                
+                <div class="about__w-img">
+                    <img class="about__img" src="img/about.jpg" alt="about image">
+                </div>           
+             </div>
+        </section>
+    </div>
+    
 </body>
 </html>
