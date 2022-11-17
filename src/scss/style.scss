@@ -1,7 +1,16 @@
-// @font-face {
-// 	font-family: "TTLakes";
-// 	 src: url(./TTLakes/TTLakes-Medium.ttf);
-// }
+@import "./swiper.scss";
+@import "./icon.scss";
+@import "./header.scss";
+@font-face {
+	font-family: "TTLakes";
+	 src: url(../fonts/TTLakes-Medium.ttf)  format("truetype");
+	 font-weight: 500;
+}
+@font-face {
+	font-family: "TTLakes";
+	 src: url(../fonts/TTLakes-Regular.ttf)  format("truetype");
+	 font-weight: 400;
+}
 /* icons */
 /* end of icons */
 * {
@@ -17,35 +26,21 @@
 	align-items: center;
 	background-color: #fff;
 }
-.icon {
-	width: 40px;
-	height: 40px;
-	background-color: #FF3E79;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 20px;
-}
-.repair-icon {
-	background-image: url(../img/repair.svg);
-}
-.check-icon {
-	background-image: url(../img/check.svg);
-}
+
+
 .header__i-group-1 {
 	display: none;
 	margin-left: auto;
 }
 .header__icon1 {
 	margin-right: 20px;
-	background-image: url(../img/call.svg);
+	
 }
 .header__icon2 {
 	margin-right: 20px;
-	background-image: url(../img/chat.svg);
 }
 .header__icon3 {
 	margin-right: 20px;
-	background-image: url(../img/profile.svg);
 }
 .header__block {
 	display: flex;
@@ -87,7 +82,6 @@
 }
 .header__call-icon {
 	padding-left: 16px;
-	// background-image: url(../img/repair.svg);
 }
 .services {
 	background-color: #f8f8f8;
@@ -417,3 +411,4 @@
 		border-radius: 5px;
 	}
 }
+
