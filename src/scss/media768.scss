@@ -168,7 +168,21 @@
 
 	}
 	.footer{
-		background-color: aqua;
+        padding:32px 24px 25px 24px;
+		flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 	}
-	
+    .footer__copyright{
+        width:218px;
+        padding-bottom: 16px;
+        text-align: start;
+    }
+    .footer__copyright2{
+        width: 214px;
+        padding-bottom: 16px;
+    }
+	.footer__info{
+        width:213px;
+    }
 }
