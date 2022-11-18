@@ -5,7 +5,7 @@
 	display: none;
 }
 .swipe__item {
-	width: 224px !important;
+	width: 224px;
 	height: 72px;
 	margin: 10px;
 	padding: 0 16px;
@@ -15,12 +15,31 @@
 	border: 1px solid #EAEAEA;
 	border-radius: 6px;
 }
+.swipe2 .swipe__item{
+	flex-direction: column;
+	justify-content: space-between;
+}
+.swipe2 .swipe__item p{
+	font-size: 16px;
+	font-weight: 500;
+	padding-top:14px;
+	margin-right: auto;
+}
+.swipe2 .swipe__item div{
+	margin-left: auto;
+	margin-bottom: 16px;
+}
 .swipe__img {
 	max-width: 108px;
 	max-height: 52px;
 }
 .swipe2 .swipe__item{
 	height:160px;
+}
+.swipe3 .swipe__item{
+	width: 260px;
+	height: 200px;
+	
 }
 
 
@@ -29,7 +48,7 @@
 	background-image: url(../img/dropdown.svg);
 }
 div.swiper {
-	width: 100%;
+	// width: 100%;
 	height:120px;
     margin-left:16px;
 	&::after {
@@ -46,6 +65,9 @@ div.swiper {
 div.swiper2{
 	height:220px;
 }
+div.swiper3{
+	height:260px;
+}
 
 
 .swiper-slide {
@@ -59,6 +81,49 @@ div.swiper2{
 .swiper-pagination-bullet-active {
 	background-color: #B5B6BC;
 }
+.swipe__price-cont{
+	width:100%;
+	height:100%;
+	font-size: 14px;
+	letter-spacing: .2px;
+	line-height: 18px;
+}
+.swipe__service{
+	height: 33%;
+	
+}
+.swipe__price-m{
+	height: 33%;
+	padding-top:16px;
+}
+.swipe__service-term{
+	height: 33%;
+	padding-top:16px;
+}
+.p-i{
+	position:absolute;
+	right:16px;
+	bottom:16px;
+	display: flex;
+}
+
+.p-i p{
+	margin:auto;
+	transform: translateX(4px);
+	color:#fff;
+	font-weight: 900;
+
+}
+
+.swipe3 .swipe__item{
+	padding:16px;
+}
+.price-item p:first-child{
+	padding-bottom:4px;
+	color:#7E7E82;
+	line-height: 14px;
+}
+
 @media (min-width:381px) {
 	.swiper {
 		&::after {
