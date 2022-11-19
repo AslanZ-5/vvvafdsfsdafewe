@@ -8,6 +8,11 @@
 	 src: url(../fonts/TTLakes-Regular.ttf)  format("truetype");
 	 font-weight: 400;
 }
+@font-face {
+	font-family: "TTLakes";
+	 src: url(../fonts/TTLakes-Bold.ttf)  format("truetype");
+	 font-weight: 900;
+}
 /* icons */
 /* end of icons */
 * {
@@ -19,7 +24,7 @@
 .body{
 	background-color: #F8F8F8;
 }
-.header {
+.header-b {
 	height: 90px;
 	display: flex;
 	justify-content: space-between;
@@ -159,6 +164,9 @@
 	text-decoration: none;
 	font-size: 16px;
 	color: #7E7E82;
+}
+.container{
+	background-color: #f8f8f8;
 }
 .about {
 	background-color: #f8f8f8;

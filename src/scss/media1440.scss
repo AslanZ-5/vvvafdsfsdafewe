@@ -1,6 +1,23 @@
 @media (min-width:1440px) {
    
-   
+    .big-sc{
+        display: flex;
+        width:75%;
+    }
+    .side-bar{
+        width:21.5%;
+        position: static;
+        left:0;
+
+        
+    }
+       .big-cont{
+        width:79.5%;
+    }
+    
+    .side-bar__icon1{
+        display: none;
+    }
   
     
 }
