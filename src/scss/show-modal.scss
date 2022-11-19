@@ -1,4 +1,6 @@
-.s-feedback{
+
+
+.show-modal{
     width:320px;
     height: 676px;
     position: absolute;
@@ -7,16 +9,18 @@
     top:-700px;
     z-index: 10;
 }
-.s-feedback.change{
-    top:0
+.show-modal.change{
+    top:0;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+        16px 0px 52px 0px rgba(14, 24, 80, 0.2);
 }
-.s-feedback__title{
+.show-modal__title{
     position: relative;
     margin: 40px 14px 24px 0;
     padding-left: 15px;
     font-size: 24px;
 }
-.s-feedback__title::before{
+.show-modal__title::before{
     content:"";
     width:3px;
     height: 40px;
@@ -25,6 +29,7 @@
     position: absolute;
     left:0;
     top:0;
+    z-index: 10;
 }
 .input-group{
     position: relative;
@@ -55,7 +60,7 @@
     top:12px;
     font-size: 14px;
 }
-.s-feedback__confid{
+.show-modal__confid{
     width:288px;
     height: 64px;
     margin-right: auto;
@@ -64,14 +69,14 @@
     text-align: left;
 }
 
-.s-feedback__link{
+.show-modal__link{
     color:#FF3E79;
     font-weight: 500;
     text-decoration: none;
 }
-.s-feedback__btn{
+.show-modal__btn{
     width: 136px;
 }
-.s-feedback__btn .p-btn-text{
+.show-modal__btn .p-btn-text{
     transform: translateX(10px);
 }

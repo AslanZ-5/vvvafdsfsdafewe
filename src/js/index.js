@@ -7,8 +7,10 @@ const showImg = document.querySelector('.show_img')
 const showImg2 = document.querySelector('.show-img2')
 const menuTog = document.querySelectorAll('.bar-tog')
 const sideBar = document.querySelector('.side-bar')
-const togItem = document.querySelectorAll('.s-feedback__tog')
-const feedbackBl = document.querySelector('.s-feedback')
+const togItem = document.querySelectorAll('.feedback-tog')
+const feedbackBl = document.querySelector('.show-modal')
+const bckgr = document.querySelector('.bck-gr')
+
 
 const swiper = new Swiper('.swiper', {
   
@@ -49,6 +51,8 @@ menuTog.forEach((item) => {
 togItem.forEach((item) => {
   item.addEventListener('click', () => {
     feedbackBl.classList.toggle('change')
+    bckgr.classList.toggle('inable-bck')
+    sideBar.classList.toggle('change')
     if (feedbackBl.classList.contains('change')){
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
