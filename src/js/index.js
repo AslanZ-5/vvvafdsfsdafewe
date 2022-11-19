@@ -7,6 +7,8 @@ const showImg = document.querySelector('.show_img')
 const showImg2 = document.querySelector('.show-img2')
 const menuTog = document.querySelectorAll('.bar-tog')
 const sideBar = document.querySelector('.side-bar')
+const togItem = document.querySelectorAll('.s-feedback__tog')
+const feedbackBl = document.querySelector('.s-feedback')
 
 const swiper = new Swiper('.swiper', {
   
@@ -38,8 +40,19 @@ const showFunc = function(btn,img){
 showFunc(showAllBtn,showImg)
 showFunc(showAllBtn2,showImg2)
 
+
 menuTog.forEach((item) => {
   item.addEventListener('click', () => {
       sideBar.classList.toggle('change')
   })
 })
+togItem.forEach((item) => {
+  item.addEventListener('click', () => {
+    feedbackBl.classList.toggle('change')
+    if (feedbackBl.classList.contains('change')){
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  })
+ 
+})
+
