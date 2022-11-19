@@ -5,7 +5,8 @@ const showAllBtn = document.querySelector('.show_all')
 const showAllBtn2 = document.querySelector('.show-btn2')
 const showImg = document.querySelector('.show_img')
 const showImg2 = document.querySelector('.show-img2')
-
+const menuTog = document.querySelectorAll('.bar-tog')
+const sideBar = document.querySelector('.side-bar')
 
 const swiper = new Swiper('.swiper', {
   
@@ -36,4 +37,9 @@ const showFunc = function(btn,img){
 
 showFunc(showAllBtn,showImg)
 showFunc(showAllBtn2,showImg2)
-  
+
+menuTog.forEach((item) => {
+  item.addEventListener('click', () => {
+      sideBar.classList.toggle('change')
+  })
+})

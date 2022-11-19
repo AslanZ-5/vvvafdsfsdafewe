@@ -1,4 +1,11 @@
 @media (min-width:768px) {
+	.side-bar{
+        width: 320px;
+    }
+	.side-bar__block{
+		width:222px;
+		height: 876px;
+	}
     .header__menu {
 		margin-left: 24px;
 		margin-right: 60px;

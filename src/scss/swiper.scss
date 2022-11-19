@@ -160,20 +160,3 @@ div.swiper3{
 	}
 }
 
-@media (min-width:1120px) {
-	.swipe__items {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-	}
-	.swipe__item {
-		&:nth-child(7) {
-			display: flex;
-		}
-		
-		width: 240px;
-	}
-	.swipe__block {
-		display: block;
-		padding-left: 21px;
-		padding-right: 15px;
-	}
-}
