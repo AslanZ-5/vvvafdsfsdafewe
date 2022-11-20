@@ -1,29 +1,4 @@
 @media (min-width:1120px) {
-    
-    // .side-bar{
-    //     width:21.5%;
-    //     position: static;
-    //     left:0;
-
-        
-    // }
-    // .big-cont{
-    //     width:79.5%;
-    // }
-    // .side-bar__logo{
-    //     margin:25px auto 0 16.5px;
-    //     width:55px;
-    // }
-    // .side-bar__icon1.icon{
-    //     width:34px;
-    //     height:34px;
-    // }
-    // .side-bar__icon2.icon{
-    //     width:34px;
-    //     height:34px;
-    // }
-  
-    
 	.header-b {
 		display: none;
 	}
@@ -94,8 +69,8 @@
 	.item3 {
 		display: block;
 		order: 1;
-		border: 2px solid #B8FFEC;
-		background-color: #fff;
+		border: 2px solid $active-blue;
+		background-color: $white;
 		border-radius: 6px;
 	}
 	.item4 {

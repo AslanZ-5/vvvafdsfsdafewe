@@ -5,7 +5,7 @@
     height: 100vh;
     min-height: 676px;
     position: absolute;
-    background-color: #fff;
+    background-color: $white;
     right:0;
     top:-700px;
     z-index: 10;
@@ -31,7 +31,7 @@
     width:3px;
     height: 40px;
     border-radius: 0 10px 10px 0;
-    background-color: #41F6D7;
+    background-color: $before-strip-color;
     position: absolute;
     left:0;
     top:0;
@@ -46,7 +46,7 @@
 }
 .field{
     width: 100%;
-    border: 1px solid #eaeaea;
+    border: 1px solid $light-gray;
     font-size: 1.4px;
     border-radius: 8px;
 
@@ -71,12 +71,12 @@
     height: 64px;
     margin-right: auto;
     margin-left: auto;
-    color:#7E7E82;
+    color:$gray-txt;
     text-align: left;
 }
 
 .show-modal__link{
-    color:#FF3E79;
+    color:$icon-color;
     font-weight: 500;
     text-decoration: none;
 }

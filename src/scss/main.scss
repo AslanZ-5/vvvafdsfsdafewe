@@ -1,36 +1,10 @@
-@font-face {
-	font-family: "TTLakes";
-	 src: url(../fonts/TTLakes-Medium.ttf)  format("truetype");
-	 font-weight: 500;
-}
-@font-face {
-	font-family: "TTLakes";
-	 src: url(../fonts/TTLakes-Regular.ttf)  format("truetype");
-	 font-weight: 400;
-}
-@font-face {
-	font-family: "TTLakes";
-	 src: url(../fonts/TTLakes-Bold.ttf)  format("truetype");
-	 font-weight: 900;
-}
-/* icons */
-/* end of icons */
-* {
-	margin: 0;
-	box-sizing: border-box;
-	outline: none;
-	font-family: "TTLakes", sans-serif;
-}
 
-body {
-	background-color: #f8f8f8;
-}
 .header-b {
 	height: 90px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #fff;
+	background-color: $white;
 }
 
 
@@ -74,7 +48,7 @@ body {
 		width: 2px;
 		height: 32px;
 		position: absolute;
-		background-color: #EAEAEA;
+		background-color: $light-gray;
 		top: 4px;
 		left: -5px;
 		border-radius: 1px;
@@ -108,7 +82,7 @@ body {
 		width: 4px;
 		height: 40px;
 		border-radius: 0 10px 10px 0;
-		background-color: #41F6D7;
+		background-color: $before-strip-color;
 		position: absolute;
 		left: -16px;
 		top: 0;
@@ -150,8 +124,8 @@ body {
 	display: none;
 }
 .services__item-active {
-	border: 2px solid #B8FFEC;
-	background-color: #fff;
+	border: 2px solid $active-blue;
+	background-color: $white;
 	border-radius: 6px;
 }
 .feedback {
@@ -163,7 +137,7 @@ body {
 .feedback__link {
 	text-decoration: none;
 	font-size: 16px;
-	color: #7E7E82;
+	color: $gray-txt;
 }
 .about__wrapper {
 	width: 100%;
