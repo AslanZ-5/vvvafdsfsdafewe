@@ -5,9 +5,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 20px;
+	transition: opacity,transform .4s;
+	cursor: pointer;
 }
+
 .icon-fill{
 	background-color: $icon-color;
+}
+.icon:hover{
+	transform: scale(1.1);
 }
 .repair-icon {
 	background-image: url(../img/repair.svg);

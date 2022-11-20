@@ -4,7 +4,7 @@
     position: absolute;
     top:0;
     left:-365px;
-    z-index: 5;
+    z-index: 10;
     background-color: $white;
     letter-spacing: -.2px;
     color:$dark-txt;
@@ -104,6 +104,11 @@
 .side-bar__lang{
     padding-right: 7px;
     text-transform: uppercase;
+    transition: transform .4s;
+    cursor: pointer;
+}
+.side-bar__lang:hover{
+    transform: scale(1.1);
 }
 .side-bar__lang-active{
     color:$gray-txt;

@@ -44,11 +44,21 @@ const showFunc = function(btn,img){
 showFunc(showAllBtn,showImg)
 showFunc(showAllBtn2,showImg2)
 
+const clickFuzzy = function(block){
+  bckgr.onclick = () => {
+    block.classList.remove('change')
+    bckgr.classList.remove('inable-bck')
+
+  } 
+}
 
 menuTog.forEach((item) => {
   item.addEventListener('click', () => {
       sideBar.classList.toggle('change')
+      bckgr.classList.toggle('inable-bck')
+      clickFuzzy(sideBar)
   })
+  
 })
 
 
@@ -64,7 +74,9 @@ const togModal = function(items,tog_block){
       if (tog_block.classList.contains('change')){
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
+      clickFuzzy(tog_block)
     })
+   
    
   })
 };

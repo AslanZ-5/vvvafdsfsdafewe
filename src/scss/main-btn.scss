@@ -3,6 +3,11 @@
 	height: 32px;
 	border-radius: 16px;
 	display: flex;
+	transition: transform .4s;
+	cursor: pointer;
+}
+.main-btn:hover{
+	transform: scale(1.1);
 }
 .btn-config{
 	width: 24px;
