@@ -51,7 +51,7 @@ body {
   position: absolute;
   background-color: #fff;
   right: 0;
-  top: -700px;
+  top: -900px;
   z-index: 10;
   transition: top .2s; }
 
