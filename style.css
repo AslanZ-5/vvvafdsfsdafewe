@@ -731,8 +731,7 @@ div.swiper3 {
   .swiper {
     display: none; }
   .hide {
-    display: none;
-    transition: display .5s; }
+    display: none; }
   .swipe__block {
     display: block;
     padding-left: 13px;
