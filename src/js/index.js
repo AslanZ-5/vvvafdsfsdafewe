@@ -56,9 +56,8 @@ menuTog.forEach((item) => {
   item.addEventListener('click', () => {
       sideBar.classList.toggle('change')
       bckgr.classList.toggle('inable-bck')
-      clickFuzzy(sideBar)
+     clickFuzzy(sideBar)
   })
-  
 })
 
 
@@ -66,16 +65,18 @@ const togModal = function(items,tog_block){
   items.forEach((item) => {
     item.addEventListener('click', () => {
       tog_block.classList.toggle('change')
-      bckgr.classList.toggle('inable-bck')
+      
       if (sideBar.classList.contains('change')){
         sideBar.classList.remove('change')
+      }else{
+        bckgr.classList.toggle('inable-bck')
       }
-      
+
       if (tog_block.classList.contains('change')){
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
+      clickFuzzy(tog_block)
     })
-   
    
   })
 };
