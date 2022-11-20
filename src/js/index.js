@@ -7,8 +7,10 @@ const showImg = document.querySelector('.show_img')
 const showImg2 = document.querySelector('.show-img2')
 const menuTog = document.querySelectorAll('.bar-tog')
 const sideBar = document.querySelector('.side-bar')
-const togItem = document.querySelectorAll('.feedback-tog')
-const feedbackBl = document.querySelector('.show-modal')
+const togFeedItems = document.querySelectorAll('.feedback-tog')
+const togPhoneItems = document.querySelectorAll('.phone-tog')
+const feedbackBl = document.querySelector('.f-modal')
+const phoneCallBl = document.querySelector('.p-modal')
 const bckgr = document.querySelector('.bck-gr')
 
 
@@ -48,15 +50,25 @@ menuTog.forEach((item) => {
       sideBar.classList.toggle('change')
   })
 })
-togItem.forEach((item) => {
-  item.addEventListener('click', () => {
-    feedbackBl.classList.toggle('change')
-    bckgr.classList.toggle('inable-bck')
-    sideBar.classList.toggle('change')
-    if (feedbackBl.classList.contains('change')){
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    }
+
+
+const togModal = function(items,tog_block){
+  items.forEach((item) => {
+    item.addEventListener('click', () => {
+      tog_block.classList.toggle('change')
+      bckgr.classList.toggle('inable-bck')
+      if (sideBar.classList.contains('change')){
+        sideBar.classList.remove('change')
+      }
+      
+      if (tog_block.classList.contains('change')){
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    })
+   
   })
- 
-})
+};
+togModal(togPhoneItems,phoneCallBl)
+togModal(togFeedItems,feedbackBl)
+
 

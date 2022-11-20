@@ -2,17 +2,23 @@
 
 .show-modal{
     width:320px;
-    height: 676px;
+    height: 100vh;
+    min-height: 676px;
     position: absolute;
     background-color: #fff;
     right:0;
     top:-700px;
     z-index: 10;
+    transition: top .2s;
 }
+
+
 .show-modal.change{
     top:0;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
-        16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+
+
 }
 .show-modal__title{
     position: relative;
