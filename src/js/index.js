@@ -74,7 +74,6 @@ const togModal = function(items,tog_block){
       if (tog_block.classList.contains('change')){
         window.scrollTo({ top: 0, behavior: 'smooth' })
       }
-      clickFuzzy(tog_block)
     })
    
    
