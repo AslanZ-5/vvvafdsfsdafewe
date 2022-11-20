@@ -54,7 +54,7 @@ body {
   top: -500px;
   z-index: -1;
   opacity: 0;
-  transition: top .2s; }
+  transition: top .4s; }
 
 .show-modal.change {
   z-index: 10;
@@ -129,7 +129,12 @@ body {
   width: 119px;
   height: 32px;
   border-radius: 16px;
-  display: flex; }
+  display: flex;
+  transition: transform .4s;
+  cursor: pointer; }
+
+.main-btn:hover {
+  transform: scale(1.1); }
 
 .btn-config {
   width: 24px;
@@ -147,7 +152,7 @@ body {
   position: absolute;
   top: 0;
   left: -365px;
-  z-index: 5;
+  z-index: 10;
   background-color: #fff;
   letter-spacing: -.2px;
   color: #1B1C21;
@@ -243,7 +248,12 @@ body {
 
 .side-bar__lang {
   padding-right: 7px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: transform .4s;
+  cursor: pointer; }
+
+.side-bar__lang:hover {
+  transform: scale(1.2); }
 
 .side-bar__lang-active {
   color: #7E7E82; }
@@ -592,10 +602,15 @@ div.swiper3 {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 20px; }
+  border-radius: 20px;
+  transition: opacity,transform .4s;
+  cursor: pointer; }
 
 .icon-fill {
   background-color: #FF3E79; }
+
+.icon:hover {
+  transform: scale(1.1); }
 
 .repair-icon {
   background-image: url(./static/repair.svg); }
@@ -907,7 +922,8 @@ div.swiper3 {
   .side-bar {
     width: 21.5%;
     position: static;
-    left: 0; }
+    left: 0;
+    box-shadow: none; }
   .big-cont {
     width: 79.5%; }
   .side-bar__icon1 {
