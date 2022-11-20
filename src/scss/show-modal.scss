@@ -7,13 +7,16 @@
     position: absolute;
     background-color: $white;
     right:0;
-    top:-700px;
-    z-index: 10;
+    top:-500px;
+    z-index: -1;
+    opacity: 0;
     transition: top .2s;
 }
 
 
 .show-modal.change{
+    z-index: 10;
+    opacity: 1;
     top:0;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
